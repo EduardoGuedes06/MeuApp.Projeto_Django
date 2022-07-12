@@ -1,6 +1,8 @@
 from django.db import models
 
 # Create your models here.
-class Person(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+class Produto(models.Model):
+    id_produto = models.ForeignKey(on_delete=models.CASCADE)
+    produto_nome = models.CharField(max_length=30)
+    produto_descricao = models.CharField(max_length=30)
+    produto_preco = models.int(max_length=30)
