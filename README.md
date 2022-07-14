@@ -1,1 +1,1 @@
-Progressão App
+Permuta App
